@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Submit Form Page</title>
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <main class="container">
+      <header class="header">
+        <h1 class="title">myCodeCamp Survey Form</h1>
+        <p class="subtitle">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <div class="form">
+        <div class="form-group">
+          <label for="name" class="field">Name</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your name"
+            class="input"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" class="field">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            class="input"
+          />
+        </div>
+        <div class="form-group">
+          <label for="age" class="field"
+            >Age <span class="clue">(optional)</span></label
+          >
+          <input
+            id="age"
+            type="email"
+            placeholder="Enter your age"
+            class="input"
+          />
+        </div>
+        <div class="form-group">
+          <label for="roles" class="field"
+            >Which option best describes your current role?</label
+          >
+          <select class="input input--select" id="roles" name="roles">
+            <option value="" disabled selected hidden
+              >Select Current Role</option
+            >
+            <option value="">Student</option>
+            <option value="">Full Time Job </option>
+            <option value="">Full Time Learner</option>
+            <option value="">Prefer Not To Say</option>
+            <option value="">Other</option>
+          </select>
+        </div>
+
+        <label class="field">Would you recommend myCodeCamp to a friend?</label>
+        <div class="form-group">
+          <input
+            type="radio"
+            id="definitely"
+            name="options"
+            value="definitely"
+          />
+          <label for="definitely">Definitely</label>
+        </div>
+
+        <div class="form-group">
+          <input type="radio" id="maybe" name="options" value="maybe" />
+          <label for="maybe">Maybe</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" id="not-sure" name="options" value="not-sure" />
+          <label for="not-sure">Not sure</label>
+        </div>
+
+        <!-- .recommend section -->
+
+        <div class="form-group">
+          <label for="select-feature" class="field"
+            >What is your favorite feature of myCodeCamp?</label
+          >
+          <select
+            class="input input--select"
+            id="select-feature"
+            name="select-feature"
+          >
+            <option value="" disabled selected hidden>Select an option</option>
+            <option value="">Challenges</option>
+            <option value="">Projects</option>
+            <option value="">Community</option>
+            <option value="">Open Source</option>
+          </select>
+        </div>
+
+        <!-- .favorite feature section -->
+
+        <div class="form-group">
+          <label class="field"
+            >What would you like to see improved?
+            <span class="clue">(Check all that apply)</span></label
+          >
+          <div class="improve-options">
+            <input
+              type="checkbox"
+              name="front-end-projects"
+              id="front-end-projects"
+            />
+            <label class="improve-options__checkbox-label"
+              >Front-end Projects</label
+            >
+          </div>
+
+          <div class="improve-options">
+            <input
+              type="checkbox"
+              name="back-end-projects"
+              id="back-end-projects"
+            />
+            <label
+              class="improve-options__checkbox-label"
+              for="back-end-projects"
+              >Back-end Projects</label
+            >
+          </div>
+          <div class="improve-options">
+            <input
+              type="checkbox"
+              name="data-visualization"
+              id="data-visualization"
+            />
+            <label
+              class="improve-options__checkbox-label"
+              for="data-visualization"
+              >Data Visualization</label
+            >
+          </div>
+          <div class="improve-options">
+            <input type="checkbox" name="challenges" id="challenges" />
+            <label class="improve-options__checkbox-label" for="challenges"
+              >Challenges</label
+            >
+          </div>
+          <div class="improve-options">
+            <input
+              type="checkbox"
+              name="open-source-community"
+              id="open-source-community"
+            />
+            <label
+              class="improve-options__checkbox-label"
+              for="open-source-community"
+              >Open Source Community</label
+            >
+          </div>
+          <div class="improve-options">
+            <input
+              type="checkbox"
+              name="gitter-help-rooms"
+              id="gitter-help-rooms"
+            />
+            <label
+              class="improve-options__checkbox-label"
+              for="gitter-help-rooms"
+              >Gitter Help Rooms</label
+            >
+          </div>
+          <div class="improve-options">
+            <input type="checkbox" name="videos" id="videos" />
+            <label class="improve-options__checkbox-label" for="videos"
+              >Videos</label
+            >
+          </div>
+          <div class="improve-options">
+            <input type="checkbox" name="city-meetups" id="city-meetups" />
+            <label class="improve-options__checkbox-label" for="city-meetups"
+              >City Meetups</label
+            >
+          </div>
+          <div class="improve-options">
+            <input type="checkbox" name="wiki" id="wiki" />
+            <label class="improve-options__checkbox-label" for="wiki"
+              >Wiki</label
+            >
+          </div>
+          <div class="improve-options">
+            <input type="checkbox" name="forum" id="forum" />
+            <label class="improve-options__checkbox-label" for="forum"
+              >Forum</label
+            >
+          </div>
+          <div class="improve-options">
+            <input
+              type="checkbox"
+              name="additional-courses"
+              id="additional-courses"
+            />
+            <label
+              class="improve-options__checkbox-label"
+              for="additional-courses"
+              >Additional Courses</label
+            >
+          </div>
+        </div>
+        <!-- .checkboxes section -->
+        <div class="form-group">
+          <div class="feedback-container">
+            <label for="suggestions">Any comments or suggestions?</label>
+            <textarea
+              name="suggestions"
+              id="suggestions"
+              rows="5"
+              class="input--textarea"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+        </div>
+        <!-- .feedback section -->
+        <button class="button" type="submit">Submit</button>
+      </div>
+      <!-- .form -->
+    </main>
+    <!-- .container -->
+  </body>
+</html>
